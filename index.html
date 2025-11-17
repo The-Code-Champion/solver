@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation Solver</title>
+    <link rel="stylesheet" href="/templates/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Equation Solver Input Form</h1>
+        <form action="/" method="POST">
+            <label for="variables">Enter Variables in a comma separated list</label>
+            <input id="vars" type="text" name="variables" placeholder="Variables (Names):" required>
+
+            <label for="equations">Enter Equations in a list separated by semi-colons</label>
+            <textarea id="eqs" name="equations" rows="5" placeholder="Equations (Expressions set to 0):" required></textarea>
+
+            <label for="constants">Enter Constants in a comma separated list of (name:value) pairs</label>
+            <input id="consts" type="text" name="constants" placeholder="Constants (Name:Value):" required>
+
+            <button type="submit">Calculate Values</button>
+        </form>
+    </div>
+</body>
+</html>
